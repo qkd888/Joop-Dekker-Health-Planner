@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment & Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!--************************************HTML-->
+<!--****************************************-->
+<!--****************************************-->
+<!--****************************************-->
+
+<body>
+    <div class="container">
+        <!-- Appointments Section -->
+        <div class="card">
+            <h1>Joop Dekker's Appointments, Contacts & Documents</h1>
+            <div class="input-group">
+                <div class="date-picker">
+                    <input type="date" id="dateSelect">
+                </div>
+                <textarea id="appointmentDetails" placeholder="Appointment Details" rows="4"></textarea>
+                <button onclick="saveAppointment()">Save Appointment</button>
+            </div>
+            <div id="appointmentList" class="scrollable"></div>
+        </div>
+
+        <!-- Contacts Section -->
+        <div class="card">
+            <h2>Contacts</h2>
+            <div class="input-group">
+                <input type="text" id="contactName" placeholder="Name">
+                <input type="tel" id="contactPhone" placeholder="Phone Number">
+                <button onclick="addContact()">Add Contact</button>
+            </div>
+            <div id="contactList" class="scrollable"></div>
+        </div>
+
+        <!-- Documents Section -->
+        <div class="card">
+            <h2>Documents</h2>
+            <div class="input-group">
+                <input type="file" id="documentInput" accept=".pdf,.jpg,.png,.docx">
+                <button onclick="addDocument()">Add Document</button>
+            </div>
+            <div id="documentList" class="scrollable"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="documentModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <div id="modalPreview"></div>
+            <div class="modal-buttons">
+                <button onclick="closeModal()">Close</button>
+                <button onclick="downloadDocument()">Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
