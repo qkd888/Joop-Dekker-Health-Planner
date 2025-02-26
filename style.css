@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #0f172a;
+    background: #6184d5;
     color: #f8fafc;
     padding: 25px;
     min-height: 100vh;
@@ -20,11 +22,11 @@ body {
 }
 
 .card {
-    background: #1e293b;
+    background: #1a2536;
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(40, 50, 70, 0.15);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53), -10px -10px 20px rgba(40, 50, 70, 0.481);
 }
 
 h1,
@@ -47,7 +49,7 @@ textarea {
     border: none;
     border-radius: 12px;
     background: #334155;
-    color: #f8fafc;
+    color: #79b6ff;
     margin-bottom: 15px;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25), inset -5px -5px 10px rgba(70, 80, 100, 0.15);
     transition: all 0.3s ease;
@@ -64,8 +66,8 @@ button {
     padding: 12px 25px;
     border: none;
     border-radius: 12px;
-    background: #60a5fa;
-    color: #0f172a;
+    background: #60a5fa1a;
+    color: #3b82f6;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -73,11 +75,13 @@ button {
 
 button:hover {
     background: #3b82f6;
+    color: black;
+    font-weight: bold;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(40, 50, 70, 0.15);
 }
 
 .list-item {
-    background: #334155;
+    background: #516989;
     padding: 15px 20px;
     border-radius: 12px;
     margin-bottom: 15px;
@@ -88,18 +92,22 @@ button:hover {
 }
 
 .list-item:hover {
-    background: #475569;
+    background: #000000;
+    color: #60a5fa;
 }
 
 .delete-btn {
-    background: #f87171;
+    background: #f8717100;
     padding: 8px 15px;
     margin-left: 15px;
+    color: #60a5fa;
 }
 
 .delete-btn:hover {
     background: #ef4444;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25), -3px -3px 6px rgba(40, 50, 70, 0.15);
+    color: #000000;
+    font-weight: bold;
 }
 
 .scrollable {
@@ -177,21 +185,26 @@ button:hover {
     .card {
         padding: 20px;
     }
+
     .list-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
     }
+
     .delete-btn {
         margin-left: 0;
         width: 100%;
     }
+
     button {
         width: 100%;
     }
+
     .modal-content {
         padding: 25px;
     }
+
     .date-picker {
         flex-direction: column;
     }
@@ -201,18 +214,22 @@ button:hover {
     body {
         padding: 15px;
     }
+
     .card {
         padding: 15px;
     }
+
     select,
     input,
     textarea {
         padding: 12px 15px;
     }
+
     .modal-content {
         margin: 8% auto;
         padding: 20px;
     }
+
     .modal-buttons {
         flex-direction: column;
         gap: 15px;
